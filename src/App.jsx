@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+import ParticlesComponent from "./components/ParticlesComponent";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -35,6 +36,7 @@ const App = () => {
   })
   return (
     <ReactLenis root>
+      <ParticlesComponent></ParticlesComponent>
       <Header></Header>
       <main>
         <Hero></Hero>

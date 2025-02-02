@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const socialLinks = [
   {
@@ -83,7 +83,7 @@ const Contact = () => {
           <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
             Contact me for collaboration
           </h2>
-          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
+          <p className="text-slate-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
@@ -93,7 +93,7 @@ const Contact = () => {
                 key={key}
                 href={href}
                 target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-slate-50/5 rounded-lg transition-[background-color,color] hover:bg-slate-50 hover:text-slate-950 active:bg-slate-50/80 reveal-up"
               >
                 {icon}
               </a>
@@ -160,6 +160,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

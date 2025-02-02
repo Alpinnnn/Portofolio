@@ -1,5 +1,5 @@
-import React from 'react'
-import { ButtonPrimary, ButtonOutline } from './Button';
+import React from "react";
+import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const sitemap = [
   {
@@ -74,7 +74,7 @@ const Footer = () => {
                   <li key={key}>
                     <a
                       href={href}
-                      className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200  reveal-up"
+                      className="block text-sm text-slate-400 py-1 transition-colors hover:text-slate-200 reveal-up"
                     >
                       {label}
                     </a>
@@ -91,7 +91,7 @@ const Footer = () => {
                     <a
                       href={href}
                       target="_blank"
-                      className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200  reveal-up"
+                      className="block text-sm text-slate-400 py-1 transition-colors hover:text-slate-200 reveal-up"
                     >
                       {label}
                     </a>
@@ -105,13 +105,13 @@ const Footer = () => {
           <a href="/" className="logo reveal-up">
             <img src="/images/logo.svg" width={40} height={40} alt="" />
           </a>
-          <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2025 <span className="text-zinc-200">Alpinnnn</span>
+          <p className="text-slate-500 text-sm reveal-up">
+            &copy; 2025 <span className="text-slate-200">Alpinnnn</span>
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

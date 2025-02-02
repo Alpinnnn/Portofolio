@@ -1,13 +1,23 @@
 import React from "react";
-
 import PropTypes from "prop-types";
 
-const ButtonPrimary = ({ href, target = "_self", label, icon, classes }) => {
+const ButtonPrimary = ({
+  href,
+  target = "_self",
+  label,
+  icon,
+  classes,
+  onClick,
+}) => {
   if (href) {
     return (
-      <a href={href} target={target} className={"btn btn-primary " + classes}>
+      <a
+        href={href}
+        target={target}
+        className={"btn btn-primary " + classes}
+        onClick={onClick}
+      >
         {label}
-
         {icon ? (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
@@ -17,7 +27,7 @@ const ButtonPrimary = ({ href, target = "_self", label, icon, classes }) => {
     );
   } else {
     return (
-      <button className={"btn btn-primary " + classes}>
+      <button className={"btn btn-primary " + classes} onClick={onClick}>
         {label}
         {icon ? (
           <span className="material-symbols-rounded" aria-hidden="true">
@@ -35,14 +45,26 @@ ButtonPrimary.propTypes = {
   target: PropTypes.string,
   icon: PropTypes.string,
   classes: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
-const ButtonOutline = ({ href, target = "_self", label, icon, classes }) => {
+const ButtonOutline = ({
+  href,
+  target = "_self",
+  label,
+  icon,
+  classes,
+  onClick,
+}) => {
   if (href) {
     return (
-      <a href={href} target={target} className={"btn btn-outline " + classes}>
+      <a
+        href={href}
+        target={target}
+        className={"btn btn-outline " + classes}
+        onClick={onClick}
+      >
         {label}
-
         {icon ? (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
@@ -52,7 +74,7 @@ const ButtonOutline = ({ href, target = "_self", label, icon, classes }) => {
     );
   } else {
     return (
-      <button className={"btn btn-outline " + classes}>
+      <button className={"btn btn-outline " + classes} onClick={onClick}>
         {label}
         {icon ? (
           <span className="material-symbols-rounded" aria-hidden="true">
@@ -70,6 +92,7 @@ ButtonOutline.propTypes = {
   target: PropTypes.string,
   icon: PropTypes.string,
   classes: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
-export { ButtonPrimary, ButtonOutline};
+export { ButtonPrimary, ButtonOutline };
