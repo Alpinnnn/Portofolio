@@ -1,0 +1,2 @@
+# Stunning Portofolio Design
+This portfolio design was originally created by [CodeWithSadee](https://github.com/codewithsadee/). I have made some modifications by adding features and elements. Please use this source code responsibly and for personal purposes only. Or, you can watch the tutorial video on YouTube: [CodeWithSadee](https://www.youtube.com/watch?v=k3JMkRwd_Nw).
